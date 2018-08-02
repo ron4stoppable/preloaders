@@ -1,0 +1,290 @@
+html, body, main{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  background-color: #cfd8dc;
+  position: relative;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  background-attachment: fixed;
+}
+.holder img{
+  width: 94px;
+  height: 94px;
+}
+
+nav{
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
+}
+
+.nav-icon{
+  background-color: rgba(0,0,0,0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: all 300ms ease;
+}
+.nav-icon:hover{
+  background-color: #f8f8f8;
+}
+.arrow-down{
+  bottom: 0;
+}
+
+.y100p{
+  height: 100%;
+}
+
+.x100p{
+  width: 100%;
+}
+
+.x60pi{
+  width: 60% !important;
+}
+
+.y100v{
+  height: 100vh;
+}
+
+.d-table{
+  display: table;
+  width: 100%;
+}
+
+.d-table-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.p-abs{
+  position: absolute;
+}
+.p-relative{
+  position: relative;
+}
+.p-fixed{
+  position: fixed;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 7px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  font-family: monospace;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.btn svg {
+  fill: #fff;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #222;
+}
+.btn:hover svg {
+  fill: #1da1f2;
+}
+main.grid{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+  height: auto;
+}
+main.grid .y100p {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+}
+
+main.grid .y100p .d-table-cell {
+  display: block;
+  width: 80%;
+  height: 80%;
+  margin: 40% auto 0;
+}
+main.grid .y100p img {
+    width: 50%;
+    height: 30%;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .hide-on-chrome{
+    display:none;
+  }
+}
+input#grid_switch {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  right: 20px;
+  bottom: 130px;
+}
+/*
+ * lol, chrome has before & after pseudo elements
+ * in input.
+ * bug or feature?
+ */
+input#grid_switch::before {
+  background-image: url(assets/grid_layout.svg);
+  width: 40px;
+  height: 40px;
+  content: "";
+  visibility: visible;
+  display: block;
+}
+input#grid_switch:checked + main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+input#grid_switch:checked + main .y100p {
+    height: 200px;
+    width: 200px;
+    display: inline-table;
+}
+input#grid_switch:checked + main .y100p img {
+    width: 50%;
+    height: 30%;
+}
+
+footer {
+  padding-bottom: 25px;
+  text-align: center;
+  width: 60%;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  margin-left: 20%;
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px dotted #f8f8f8;
+  padding-bottom: 0.3em;
+  transition: border-bottom 0.5s ease;
+}
+footer a:hover {
+  border-bottom: 1px solid;
+}
+
+/* colors */
+.red{
+  background-color: #f44336;
+}
+
+.red-accent-2 {
+  background-color: #e74c3c;
+}
+
+.read-accent-3 {
+  background-color: #e43725;
+}
+
+.crimson-light {
+  background-color: #E91E63;
+}
+
+.pink{
+  background-color: #e91e63;
+}
+
+.purple{
+  background-color: #9c27b0;
+}
+
+.deep-purple{
+  background-color: #673ab7;
+}
+
+.purple-accent-2{
+  background-color: #9B59B6;
+}
+
+.indego{
+  background-color: #3f51b5;
+}
+
+.blue{
+  background-color: #2196f3;
+}
+
+.light-blue{
+  background-color: #03a9f4;
+}
+
+.cyan{
+  background-color: #00bcd4;
+}
+
+.teal{
+  background-color: #009688;
+}
+
+.green{
+  background-color: #4caf50;
+}
+
+.light-green{
+  background-color: #8bc34a;
+}
+
+.lime{
+  background-color: #cddc39;
+}
+
+.yellow{
+  background-color: #ffd600;
+}
+
+.yellow-mute{
+  background-color: #EFCB68;
+}
+
+.amber{
+  background-color: #ffc107;
+}
+
+.orange{
+  background-color: #ff9800;
+}
+
+.deep-orange{
+  background-color: #ff5722;
+}
+
+.brown{
+  background-color: #795548;
+}
+
+.grey{
+  background-color: #9e9e9e;
+}
+
+.blue-grey{
+  background-color: #607d8b;
+}
+
+.black{
+  background-color: #222222;
+}
